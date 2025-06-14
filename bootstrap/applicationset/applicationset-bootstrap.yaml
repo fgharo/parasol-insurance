@@ -7,56 +7,57 @@ spec:
   generators:
     - list:
         elements:
-          - cluster: in-cluster
-            name: ic-rhoai-operator
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-rhoai-operator
-          - cluster: in-cluster
-            name: ic-rhoai-installation
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-rhoai-installation
-          - cluster: in-cluster
-            name: ic-rhoai-configuration
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-rhoai-configuration
-          - cluster: in-cluster
-            name: ic-shared-minio-app
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-shared-minio
+          # - cluster: in-cluster
+          #   name: ic-rhoai-operator
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-rhoai-operator
+          # - cluster: in-cluster
+          #   name: ic-rhoai-installation
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-rhoai-installation
+          # - cluster: in-cluster
+          #   name: ic-rhoai-configuration
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-rhoai-configuration
+          # Going to reuse what was given by ai-accelerator.
+          # - cluster: in-cluster
+          #   name: ic-shared-minio-app
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-shared-minio
           - cluster: in-cluster
             name: ic-shared-database-app
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
+            repoURL: https://github.com/fgharo/parasol-insurance.git
+            targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
             path: bootstrap/ic-shared-database
-          - cluster: in-cluster
-            name: ic-shared-milvus
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-shared-milvus
-          - cluster: in-cluster
-            name: ic-shared-llm
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-shared-llm
-          - cluster: in-cluster
-            name: ic-shared-img-det
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-shared-img-det
-          - cluster: in-cluster
-            name: ic-user-projects
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-user-projects
-          - cluster: in-cluster
-            name: ic-shared-app
-            repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-            targetRevision: dev
-            path: bootstrap/ic-shared-app
+          # - cluster: in-cluster
+          #   name: ic-shared-milvus
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-shared-milvus
+          # - cluster: in-cluster
+          #   name: ic-shared-llm
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-shared-llm
+          # - cluster: in-cluster
+          #   name: ic-shared-img-det
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-shared-img-det
+          # - cluster: in-cluster
+          #   name: ic-user-projects
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-user-projects
+          # - cluster: in-cluster
+          #   name: ic-shared-app
+          #   repoURL: https://github.com/fgharo/parasol-insurance.git
+          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+          #   path: bootstrap/ic-shared-app
   template:
     metadata:
       name: "{{name}}"
