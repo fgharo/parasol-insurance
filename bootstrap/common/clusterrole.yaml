@@ -1,0 +1,50 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: presync-monitoring-cluster-role
+  # uid: 363f8595-b079-4ab1-b864-b72b2bf285b8
+  # resourceVersion: '78536'
+  # creationTimestamp: '2025-06-14T02:07:19Z'
+  # labels:
+  #   app.kubernetes.io/instance: ic-rhoai-operator
+rules:
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - ''
+    resources:
+      - pods
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - ''
+    resources:
+      - configmaps
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - dscinitialization.opendatahub.io
+    resources:
+      - dscinitializations
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - datasciencecluster.opendatahub.io
+    resources:
+      - datascienceclusters
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - storage.k8s.io
+    resources:
+      - storageclasses
