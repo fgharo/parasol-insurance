@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
-  suspend: false
+  suspend: true
   template:
     spec:
       restartPolicy: Never
