@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-tcp-from-parasol-namespaces
+  namespace: ai-example-single-model-serving
+spec:
+  podSelector: {}  # Apply to all pods in this namespace
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchExpressions:
+              - key: kubernetes.io/metadata.name
+                operator: In
+                values:
+                  - ic-shared-db
+      ports:
+        - protocol: TCP
+          port: 9000

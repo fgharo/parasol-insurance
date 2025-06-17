@@ -19,7 +19,7 @@ spec:
           value: minio.ai-example-single-model-serving.svc.cluster.local
       containers:
       - name: add-images-to-bucket
-        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook:2025.1
+        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook:2024.2
         imagePullPolicy: IfNotPresent
         command: ["/bin/bash"]
         args:
