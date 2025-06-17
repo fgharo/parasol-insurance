@@ -35,11 +35,11 @@ spec:
         limits:
           cpu: '6'
           memory: 24Gi
-          nvidia.com/gpu: '1'
+          nvidia.com/mig-2g.35gb: '1'     # ✅ MIG slice instead of generic GPU
         requests:
           cpu: '1'
           memory: 8Gi
-          nvidia.com/gpu: '1'
+          nvidia.com/mig-2g.35gb: '1'     # ✅ MIG slice instead of generic GPU
       runtime: vllm
       storageUri: oci://registry.redhat.io/rhelai1/modelcar-granite-3-1-8b-instruct:1.5
     tolerations:
