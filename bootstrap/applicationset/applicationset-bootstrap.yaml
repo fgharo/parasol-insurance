@@ -23,11 +23,11 @@ spec:
           #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
           #   path: bootstrap/ic-rhoai-configuration
           # Going to reuse what was given by ai-accelerator.
-          # - cluster: in-cluster
-          #   name: ic-shared-minio-app
-          #   repoURL: https://github.com/fgharo/parasol-insurance.git
-          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
-          #   path: bootstrap/ic-shared-minio
+          - cluster: in-cluster
+            name: ic-shared-minio-app
+            repoURL: https://github.com/fgharo/parasol-insurance.git
+            targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+            path: bootstrap/ic-shared-minio
           - cluster: in-cluster
             name: ic-shared-database-app
             repoURL: https://github.com/fgharo/parasol-insurance.git
