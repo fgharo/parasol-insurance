@@ -8,6 +8,7 @@ metadata:
     argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
+  suspend: false
   backoffLimit: 4
   template:
     spec:
