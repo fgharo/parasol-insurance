@@ -25,9 +25,9 @@ spec:
         args:
         - -ec
         - |-
-          BRANCH_NAME="dev"
+          BRANCH_NAME="confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install"
           cd /opt/app-root/src
-          git clone https://github.com/rh-aiservices-bu/parasol-insurance.git && cd parasol-insurance && git checkout $BRANCH_NAME
+          git clone https://github.com/fgharo/parasol-insurance.git && cd parasol-insurance && git checkout $BRANCH_NAME
 
           cat << 'EOF' | python3
           import boto3, os, botocore
