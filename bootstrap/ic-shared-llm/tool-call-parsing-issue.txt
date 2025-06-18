@@ -1,0 +1,4 @@
+Removed this:
+            - '--enable-auto-tool-choice'
+            - '--tool-call-parser'
+            - granite

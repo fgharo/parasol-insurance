@@ -1,0 +1,50 @@
+The inference service image for granite was huge!!! Took about 5 minutes to pull.
+Pulling
+Pulling image "quay.io/modh/vllm:rhoai-2.16-cuda"
+1
+6s ago
+Today at 7:44 PM
+6s ago
+Today at 7:44 PM
+Started
+Started container modelcar-init
+1
+8s ago
+Today at 7:44 PM
+8s ago
+Today at 7:44 PM
+Created
+Created container: modelcar-init
+1
+9s ago
+Today at 7:44 PM
+9s ago
+Today at 7:44 PM
+Pulled
+Successfully pulled image "registry.redhat.io/rhelai1/modelcar-granite-3-1-8b-instruct:1.5" in 4m56.703s (4m56.703s including waiting). Image size: 16370205498 bytes.
+1
+14s ago
+Today at 7:44 PM
+14s ago
+Today at 7:44 PM
+AddedInterface
+Add eth0 [172.17.27.210/32] from k8s-pod-network
+1
+5m ago
+Today at 7:39 PM
+5m ago
+Today at 7:39 PM
+Pulling
+Pulling image "registry.redhat.io/rhelai1/modelcar-granite-3-1-8b-instruct:1.5"
+1
+5m ago
+Today at 7:39 PM
+5m ago
+Today at 7:39 PM
+Scheduled
+Successfully assigned ic-shared-llm/granite-3-1-8b-instruct-predictor-6cf968948-lwcgl to kube-d0r1a9pw0q9h2qmh892g-voicduseast-voicdgp-0000079e
+5m ago
+Today at 7:39 PM
+5m ago
+Today at 7:39 PM
+

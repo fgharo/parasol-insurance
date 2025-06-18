@@ -1,0 +1,37 @@
+1. CrashLoopBackOff for the granite-3-1-8b-instruct-predictor.ic-shared-llm.svc.cluster.local service.
+GOOD
+modelcar-init
+Container is terminated because of Completed. It exited with exit code 0. It is not started.
+modelcar
+Container is running. It is started and ready.
+
+
+
+BAD
+kserve-container
+Container is waiting because of CrashLoopBackOff. It is not started and not ready.
+The container last terminated 3 minutes ago with exit code 1 because of Error.
+
+Deeper error is:
+INFO 06-18 19:28:08 api_server.py:529] args: Namespace(host=None, port=8080, uvicorn_log_level='info', allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_cert_reqs=0, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_auto_tool_choice=True, tool_call_parser='granite', tool_parser_plugin='', model='/mnt/models', tokenizer=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, download_dir=None, load_format='auto', config_format=<ConfigFormat.AUTO: 'auto'>, dtype='half', kv_cache_dtype='auto', quantization_param_path=None, max_model_len=15000, guided_decoding_backend='outlines', distributed_executor_backend=None, worker_use_ray=False, pipeline_parallel_size=1, te...
+Traceback (most recent call last):
+File "<frozen runpy>", line 198, in _run_module_as_main
+File "<frozen runpy>", line 88, in _run_code
+File "/opt/vllm/lib64/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 585, in <module>
+uvloop.run(run_server(args))
+File "/opt/vllm/lib64/python3.12/site-packages/uvloop/__init__.py", line 109, in run
+return __asyncio.run(
+^^^^^^^^^^^^^^
+File "/usr/lib64/python3.12/asyncio/runners.py", line 194, in run
+return runner.run(main)
+^^^^^^^^^^^^^^^^
+File "/usr/lib64/python3.12/asyncio/runners.py", line 118, in run
+return self._loop.run_until_complete(task)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+File "/opt/vllm/lib64/python3.12/site-packages/uvloop/__init__.py", line 61, in wrapper
+return await main
+^^^^^^^^^^
+File "/opt/vllm/lib64/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 537, in run_server
+raise KeyError(f"invalid tool call parser: {args.tool_call_parser} "
+KeyError: 'invalid tool call parser: granite (chose from { hermes,internlm,llama3_json,mistral })'
