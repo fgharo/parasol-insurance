@@ -33,11 +33,11 @@ spec:
             repoURL: https://github.com/fgharo/parasol-insurance.git
             targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
             path: bootstrap/ic-shared-database
-          # - cluster: in-cluster
-          #   name: ic-shared-milvus
-          #   repoURL: https://github.com/fgharo/parasol-insurance.git
-          #   targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
-          #   path: bootstrap/ic-shared-milvus
+          - cluster: in-cluster
+            name: ic-shared-milvus
+            repoURL: https://github.com/fgharo/parasol-insurance.git
+            targetRevision: confirming-parasol-insurance-works-on-ibmcloud-ai-accelerator-rhoai-install
+            path: bootstrap/ic-shared-milvus
           - cluster: in-cluster
             name: ic-shared-llm
             repoURL: https://github.com/fgharo/parasol-insurance.git
