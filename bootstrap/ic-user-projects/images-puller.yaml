@@ -19,7 +19,8 @@ spec:
     spec:
       containers:
       - name: ic-workbench
-        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/ic-workbench:3.0.4
+        # image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/ic-workbench:3.0.4
+        image: quay.io/rh-aiservices-bu/rhoai-lab-parasol-insurance:1.2
         command: ["tail"]
         args: ["-f", "/dev/null"]
         resources:
@@ -29,7 +30,8 @@ spec:
             cpu: 10m
             memory: 10Mi
       - name: ic-code-server
-        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/ic-code-server:2025.1
+        # image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/ic-code-server:2025.1
+        image: quay.io/modh/codeserver:codeserver-ubi9-python-3.9-2024a-20240829-b5a8318
         command: ["tail"]
         args: ["-f", "/dev/null"]
         resources:
