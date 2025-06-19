@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"
     enable-route: 'true'
     opendatahub.io/accelerator-name: ''
-    opendatahub.io/template-display-name: OpenVINO Model Server
+    opendatahub.io/template-display-name: "OpenVINO Model Server"
     opendatahub.io/template-name: ovms
     openshift.io/display-name: ovms
   name: ovms

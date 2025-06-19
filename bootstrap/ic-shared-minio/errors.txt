@@ -1,0 +1,29 @@
+Scheduled
+Successfully assigned ic-shared-minio/minio-5f4bf7bfb7-l8fds to kube-d0r1a9pw0q9h2qmh892g-voicduseast-voicdgp-0000079e
+1s ago
+Today at 4:33 PM
+1s ago
+Today at 4:33 PM
+FailedScheduling
+0/3 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.
+4s ago
+Today at 4:33 PM
+4s ago
+Today at 4:33 PM
+FailedScheduling
+0/3 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.
+18s ago
+Today at 4:33 PM
+18s ago
+Today at 4:33 PM
+
+This seemed to go away momentarily.
+
+Failed
+Failed to pull image "image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook:2025.1": reading manifest 2025.1 in image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook: manifest unknown
+2
+18s ago
+Today at 4:33 PM
+2s ago
+Today at 4:34 PM
+

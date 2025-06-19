@@ -1,0 +1,10 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: showroom-g89cn-user1
+  labels:
+    kubernetes.io/metadata.name: showroom-g89cn-user1
+    openshift-pipelines.tekton.dev/namespace-reconcile-version: 1.15.1
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: ''

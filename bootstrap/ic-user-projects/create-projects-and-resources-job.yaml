@@ -9,6 +9,7 @@ metadata:
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
     argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
+  suspend: false
   backoffLimit: 4
   template:
     spec:
